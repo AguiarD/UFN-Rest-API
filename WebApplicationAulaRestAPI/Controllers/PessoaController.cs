@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebApplicationAulaRestAPI.Data;
@@ -6,11 +7,19 @@ using WebApplicationAulaRestAPI.Models;
 
 namespace WebApplicationAulaRestAPI.Controllers
 {
+    [Authorize]
     //[Route("api/[controller]")]
     [Route("api")]  // url base (url base-> http://localhost:5852; controller-> api/pessoas; endpoint-> todas)
     [ApiController]
     public class PessoaController : ControllerBase
     {
+        private readonly IJWTAuthenticationManager jwtAuthenticationManager;
+
+        public PessoaController(IJWTAuthenticationManager jwtAuthenticationManager)
+        {
+            this.jwtAuthenticationManager = jwtAuthenticationManager;
+        }
+
         //Contexto contexto; // Gerar uma instancia de contexto mas como criei em ... não precisa mais
 
         [HttpGet]

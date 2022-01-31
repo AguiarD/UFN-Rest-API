@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Cliente\\Documents\\Drive_HP_Elitebook_840\\UFN\\WebApplicationAulaRestAPI\\WebApplicationAulaRestAPI\\WebApplicationAulaRestAPI.csproj": {}
+    "C:\\Users\\Cliente\\Documents\\Drive_HP_Elitebook_840\\UFN\\WA_API_JWT_Auth\\WebApplicationAulaRestAPI\\WebApplicationAulaRestAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Cliente\\Documents\\Drive_HP_Elitebook_840\\UFN\\WebApplicationAulaRestAPI\\WebApplicationAulaRestAPI\\WebApplicationAulaRestAPI.csproj": {
+    "C:\\Users\\Cliente\\Documents\\Drive_HP_Elitebook_840\\UFN\\WA_API_JWT_Auth\\WebApplicationAulaRestAPI\\WebApplicationAulaRestAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cliente\\Documents\\Drive_HP_Elitebook_840\\UFN\\WebApplicationAulaRestAPI\\WebApplicationAulaRestAPI\\WebApplicationAulaRestAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Cliente\\Documents\\Drive_HP_Elitebook_840\\UFN\\WA_API_JWT_Auth\\WebApplicationAulaRestAPI\\WebApplicationAulaRestAPI.csproj",
         "projectName": "WebApplicationAulaRestAPI",
-        "projectPath": "C:\\Users\\Cliente\\Documents\\Drive_HP_Elitebook_840\\UFN\\WebApplicationAulaRestAPI\\WebApplicationAulaRestAPI\\WebApplicationAulaRestAPI.csproj",
+        "projectPath": "C:\\Users\\Cliente\\Documents\\Drive_HP_Elitebook_840\\UFN\\WA_API_JWT_Auth\\WebApplicationAulaRestAPI\\WebApplicationAulaRestAPI.csproj",
         "packagesPath": "C:\\Users\\Cliente\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cliente\\Documents\\Drive_HP_Elitebook_840\\UFN\\WebApplicationAulaRestAPI\\WebApplicationAulaRestAPI\\obj\\",
+        "outputPath": "C:\\Users\\Cliente\\Documents\\Drive_HP_Elitebook_840\\UFN\\WA_API_JWT_Auth\\WebApplicationAulaRestAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -45,6 +45,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.1, )"
